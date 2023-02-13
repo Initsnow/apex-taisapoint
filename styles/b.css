@@ -1,0 +1,150 @@
+html,
+body {
+  background-color: #2c3136;
+  width: 100%;
+  height: 100%;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  margin: 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.map {
+  font-size: 0;
+}
+#mapimage {
+  position: absolute;
+}
+#svg {
+  position: absolute;
+}
+.svgpoint {
+  transition: all 0.4s linear;
+  cursor: pointer;
+}
+.svgpoint:hover {
+  r: 5;
+  transition: all 0.3s linear;
+}
+#cslbtn {
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  cursor: pointer;
+  top: 22%;
+  left: 1.5rem;
+  z-index: 2;
+}
+.ax-popup {
+  z-index: 820;
+}
+.ax-drawer-content {
+  height: 100%;
+}
+.ax-padding {
+  height: 100%;
+  padding: 4rem;
+}
+.csl {
+  height: 100%;
+}
+.row {
+  align-items: center;
+  margin-bottom: 30px;
+}
+#console {
+  height: 100%;
+  position: relative;
+}
+#issue {
+  position: absolute;
+  bottom: 0;
+}
+#information #imgs .img {
+  width: 100%;
+  object-fit: contain;
+  padding-bottom: 0.3rem;
+  -webkit-user-drag: none;
+  transition: all 0.3s linear;
+}
+#information {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 90%;
+  height: 85%;
+  overflow: auto;
+  border-radius: 1rem;
+  border: 0.4rem solid #474d58;
+  background-color: #0d1117;
+  z-index: 4;
+  flex-direction: row;
+}
+#cover {
+  background: #000;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 150%;
+  filter: alpha(opacity=50);
+  opacity: 0;
+  display: none;
+  transition: all 0.2s linear;
+  z-index: 3;
+}
+#information #imgs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  transition: all 0.2s ease-out;
+}
+#information #from {
+  margin-left: 0.7rem;
+  width: 60%;
+  transition: all 0.2s ease-out;
+}
+#video {
+  height: 100%;
+}
+#video iframe {
+  width: 100%;
+  height: 100%;
+}
+#details {
+  background-color: #0d1117;
+  border: 0.2rem solid #474d58;
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+  color: whitesmoke;
+}
+#ifclose {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  transition: all 200ms linear;
+  cursor: pointer;
+  width: 3.8rem;
+  height: 3.8rem;
+}
+.ax-icon-close {
+  color: #fff;
+}
+.ax-icon-close:hover {
+  color: #dc3545;
+}
+#padding {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
